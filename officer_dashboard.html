@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Officer Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1>College Placement Portal</h1>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>
+    <a href="officer_dashboard.html">Officer</a>
+    <a href="student_dashboard.html">Student</a>
+    <a href="#" onclick="doLogout()">Logout</a>
+    <span id="whoami" style="margin-left:10px;"></span>
+  </div>
+</header>
+<main>
+
+  <h2>Officer Dashboard</h2>
+  <div class="grid grid-2">
+    <form id="jobPostForm" class="card">
+      <h3>Post a Job</h3>
+      <label>Job Title</label>
+      <input id="title" placeholder="Software Engineer" required />
+      <label>Company</label>
+      <input id="company" placeholder="ABC Pvt Ltd" required />
+      <label>Location</label>
+      <input id="location" placeholder="Bengaluru" required />
+      <label>Deadline</label>
+      <input type="date" id="deadline" required />
+      <label>Description</label>
+      <textarea id="description" rows="4" placeholder="Responsibilities, tech stack, qualifications..." required></textarea>
+      <label>Package (CTC)</label>
+      <input id="package" placeholder="6 LPA" />
+      <button type="submit">Publish Job</button>
+    </form>
+    <div class="card">
+      <h3>Your Posted Jobs</h3>
+      <div id="officerJobList"></div>
+      <div style="margin-top:12px;">
+        <a class="secondary" href="view_applications.html">View Applications →</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+<footer>
+  <small class="muted">Mini Project • LocalStorage demo (no backend).</small>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

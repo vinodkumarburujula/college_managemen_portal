@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1>College Placement Portal</h1>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>
+    <a href="officer_dashboard.html">Officer</a>
+    <a href="student_dashboard.html">Student</a>
+    <a href="#" onclick="doLogout()">Logout</a>
+    <span id="whoami" style="margin-left:10px;"></span>
+  </div>
+</header>
+<main>
+
+  <h2>Create account</h2>
+  <form id="registerForm" class="card">
+    <label>Role</label>
+    <select id="reg_role">
+      <option value="student">Student</option>
+      <option value="officer">Placement Officer</option>
+    </select>
+    <label>Username</label>
+    <input id="reg_username" placeholder="e.g., vinod123" required />
+    <label>Password</label>
+    <input type="password" id="reg_password" required />
+    <label>Mobile</label>
+    <input id="reg_mobile" required />
+    <button type="submit">Register</button>
+  </form>
+
+</main>
+<footer>
+  <small class="muted">Mini Project • LocalStorage demo (no backend).</small>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

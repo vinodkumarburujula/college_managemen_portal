@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>View Applications</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1>College Placement Portal</h1>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>
+    <a href="officer_dashboard.html">Officer</a>
+    <a href="student_dashboard.html">Student</a>
+    <a href="#" onclick="doLogout()">Logout</a>
+    <span id="whoami" style="margin-left:10px;"></span>
+  </div>
+</header>
+<main>
+
+  <h2>Applications (Your Jobs)</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Student</th>
+        <th>Job Title</th>
+        <th>Company</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="appsTableBody"></tbody>
+  </table>
+  <div class="nav" style="margin-top:12px;">
+    <a class="secondary" href="send_message.html">Send Message</a>
+  </div>
+
+</main>
+<footer>
+  <small class="muted">Mini Project • LocalStorage demo (no backend).</small>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
