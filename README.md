@@ -1,1 +1,1 @@
-# college_managemen_portal
+# college_management_portal
